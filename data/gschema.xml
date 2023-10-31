@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema path="/io/github/danirabbit/voiceshark/" id="io.github.danirabbit.voiceshark">
+    <key type="x" name="last-completion">
+      <default>0</default>
+      <summary>Unix UTC time of last completed day</summary>
+      <description>Used to determine streaks</description>
+    </key>
+
+    <key name="streak" type="i">
+      <default>0</default>
+      <summary>Number of streak days</summary>
+      <description>How many consecutive days of completed practice have been logged</description>
+    </key>
+  </schema>
+</schemalist>

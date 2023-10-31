@@ -1,5 +1,7 @@
 project('io.github.danirabbit.voiceshark', 'vala', 'c')
 
+gnome = import('gnome')
+
 granite_dep = dependency('granite-7')
 gtk_dep = dependency('gtk4')
 
@@ -13,5 +15,7 @@ executable(
     ],
     install: true
 )
+
+gnome.post_install(glib_compile_schemas: true)
 
 subdir('data')
