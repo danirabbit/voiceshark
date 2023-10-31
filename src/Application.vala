@@ -14,6 +14,11 @@ public class VoiceShark.App : Gtk.Application {
     protected override void startup () {
         Granite.init ();
 
+        Intl.setlocale (ALL, "");
+        Intl.bindtextdomain (application_id, "/app/share/locale");
+        Intl.bind_textdomain_codeset (application_id, "UTF-8");
+        Intl.textdomain (application_id);
+
         var quit_action = new SimpleAction ("quit", null);
         quit_action.activate.connect (quit);
 
