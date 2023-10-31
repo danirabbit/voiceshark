@@ -22,6 +22,10 @@ install_data(
     rename: meson.project_name() + '.gschema.xml'
 )
 
+gresource = gnome.compile_resources(
+    'gresource', 'gresource.xml'
+)
+
 icon_sizes = ['16', '24', '32', '48', '64', '128']
 foreach i : icon_sizes
     install_data(

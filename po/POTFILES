@@ -1,2 +1,4 @@
 src/Application.vala
+src/FinishPage.vala
 src/MainWindow.vala
+src/StartPage.vala

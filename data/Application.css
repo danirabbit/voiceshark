@@ -1,0 +1,31 @@
+/*
+ * SPDX-License-Identifier: GPL-3.0-or-later
+ * SPDX-FileCopyrightText: 2023 Danielle Foré (https://danirabbit.github.io)
+ */
+
+@define-color accent_color @BUBBLEGUM_500;
+
+page {
+    border-spacing: 1em;
+    padding: 1em;
+}
+
+page button.suggested-action {
+    margin-top: 1em;
+}
+
+label.passage {
+    color: @accent_color;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    font-weight: 900;
+}
+
+label.emoji {
+    font-size: 4em;
+}
+
+label.accent {
+    font-size: 3em;
+    font-weight: 900;
+}
