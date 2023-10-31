@@ -7,6 +7,7 @@ i18n = import('i18n')
 
 granite_dep = dependency('granite-7')
 gtk_dep = dependency('gtk4')
+portal_dep = [dependency('libportal'), dependency('libportal-gtk4')]
 
 executable(
     meson.project_name(),
@@ -14,7 +15,8 @@ executable(
     'src' / 'MainWindow.vala',
     dependencies: [
         granite_dep,
-        gtk_dep
+        gtk_dep,
+        portal_dep
     ],
     install: true
 )
