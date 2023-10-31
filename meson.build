@@ -6,6 +6,7 @@ gtk_dep = dependency('gtk4')
 executable(
     meson.project_name(),
     'src' / 'Application.vala',
+    'src' / 'MainWindow.vala',
     dependencies: [
         granite_dep,
         gtk_dep
