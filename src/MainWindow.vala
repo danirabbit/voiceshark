@@ -14,12 +14,12 @@ public class VoiceShark.MainWindow : Gtk.ApplicationWindow {
         };
         titlebar.add_css_class (Granite.STYLE_CLASS_FLAT);
 
-        placeholder = new Granite.Placeholder ("Do your voice training!");
+        placeholder = new Granite.Placeholder (_("Do your voice training!"));
 
         button = placeholder.append_button (
             new ThemedIcon ("process-completed"),
-            "Done",
-            "I've completed my voice training"
+            _("Done"),
+            _("I've completed my voice training")
         );
 
         child = placeholder;
@@ -36,14 +36,14 @@ public class VoiceShark.MainWindow : Gtk.ApplicationWindow {
         var completed_datetime = new DateTime.from_unix_utc (settings.get_int64 ("last-completion"));
 
         if (completed_datetime.to_unix () == 0) {
-            placeholder.description = "It's the first day of the rest of your life 🎉️";
+            placeholder.description = _("It's the first day of the rest of your life 🎉️");
             return;
         }
 
         var now_datetime = new DateTime.now_utc ();
 
         if (Granite.DateTime.is_same_day (completed_datetime, now_datetime)) {
-            placeholder.title = "Already done. Good job!";
+            placeholder.title = _("Already done. Good job!");
             button.sensitive = false;
         } else {
             var completed_day = completed_datetime.get_day_of_year ();
@@ -53,9 +53,15 @@ public class VoiceShark.MainWindow : Gtk.ApplicationWindow {
             }
         }
 
-        placeholder.description = "last completed %s. %i days".printf (
+        var streak = settings.get_int ("streak");
+
+        placeholder.description = ngettext (
+            "last completed %s. %i day",
+            "last completed %s. %i days",
+            streak
+        ).printf (
             Granite.DateTime.get_relative_datetime (completed_datetime),
-            settings.get_int ("streak")
+            streak
         );
     }
 
