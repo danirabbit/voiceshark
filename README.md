@@ -2,7 +2,7 @@
 
 Run `flatpak-builder` to configure the build environment, download dependencies, build, and install
 
-    flatpak-builder build voiceshark.yml --user --install --force-clean --install-deps-from=appcenter
+    flatpak-builder build io.github.danirabbit.voiceshark.yml --user --install --force-clean --install-deps-from=appcenter
 
 execute with `io.github.danirabbit.voiceshark`
 
