@@ -1,5 +1,5 @@
 i18n.merge_file(
-    input: 'desktop.in',
+    input: 'voiceshark.desktop.in',
     output: meson.project_name() + '.desktop',
     po_dir: meson.source_root() / 'po' / 'extra',
     type: 'desktop',
