@@ -1,0 +1,46 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the io.github.danirabbit.voiceshark package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: io.github.danirabbit.voiceshark\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-10-31 13:09-0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: src/MainWindow.vala:17
+msgid "Do your voice training!"
+msgstr ""
+
+#: src/MainWindow.vala:21
+msgid "Done"
+msgstr ""
+
+#: src/MainWindow.vala:22
+msgid "I've completed my voice training"
+msgstr ""
+
+#: src/MainWindow.vala:39
+msgid "It's the first day of the rest of your life 🎉️"
+msgstr ""
+
+#: src/MainWindow.vala:46
+msgid "Already done. Good job!"
+msgstr ""
+
+#: src/MainWindow.vala:59
+#, c-format
+msgid "last completed %s. %i day"
+msgid_plural "last completed %s. %i days"
+msgstr[0] ""
+msgstr[1] ""

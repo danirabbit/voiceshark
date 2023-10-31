@@ -1,0 +1,32 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the extra package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: extra\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-10-31 13:10-0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: data/voiceshark.metainfo.xml.in:5 data/voiceshark.desktop.in:6
+msgid "Voice Shark"
+msgstr ""
+
+#: data/voiceshark.metainfo.xml.in:6 data/voiceshark.desktop.in:7
+msgid "Achieve your voice goals"
+msgstr ""
+
+#: data/voiceshark.metainfo.xml.in:18
+msgid ""
+"Learn to speak in a more feminine way and build confidence in your voice "
+"with daily practice exercises."
+msgstr ""

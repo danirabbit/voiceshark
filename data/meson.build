@@ -1,13 +1,19 @@
-install_data(
-    'voiceshark.desktop',
-    install_dir: get_option('datadir') / 'applications',
-    rename: meson.project_name() + '.desktop'
+i18n.merge_file(
+    input: 'voiceshark.desktop.in',
+    output: meson.project_name() + '.desktop',
+    po_dir: meson.source_root() / 'po' / 'extra',
+    type: 'desktop',
+    install: true,
+    install_dir: get_option('datadir') / 'applications'
 )
 
-install_data(
-    'voiceshark.metainfo.xml',
+i18n.merge_file(
+    input: 'voiceshark.metainfo.xml.in',
+    output: meson.project_name() + '.metainfo.xml',
+    po_dir: meson.source_root() / 'po' / 'extra',
+    type: 'xml',
+    install: true,
     install_dir: get_option('datadir') / 'metainfo',
-    rename: meson.project_name() + '.metainfo.xml'
 )
 
 install_data(
