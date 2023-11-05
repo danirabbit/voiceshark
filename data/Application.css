@@ -29,3 +29,22 @@ label.accent {
     font-size: 3em;
     font-weight: 900;
 }
+
+page .large-icons {
+    color: @accent_color;
+    -gtk-icon-size: 9em;
+}
+
+.breathe {
+    animation: breathe 8s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    animation-direction: alternate;
+}
+
+@keyframes breathe {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(0.4);
+    }
+}

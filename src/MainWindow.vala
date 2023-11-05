@@ -17,6 +17,11 @@ public class VoiceShark.MainWindow : Gtk.ApplicationWindow {
             transition_type = SLIDE_LEFT_RIGHT
         };
         stack.add_child (start_page);
+
+        for (var i = 0; i < 5; i++) {
+            stack.add_child (new PracticePage ());
+        }
+
         stack.add_child (finish_page);
 
         child = stack;

@@ -16,6 +16,7 @@ executable(
     'src' / 'Application.vala',
     'src' / 'FinishPage.vala',
     'src' / 'MainWindow.vala',
+    'src' / 'PracticePage.vala',
     'src' / 'StartPage.vala',
     dependencies: [
         granite_dep,
