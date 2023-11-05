@@ -3,4 +3,10 @@
   <gresource prefix="/io/github/danirabbit/voiceshark">
     <file compressed="true">Application.css</file>
   </gresource>
+  <gresource prefix="/io/github/danirabbit/voiceshark/icons">
+    <file alias="scalable/categories/breathe-symbolic.svg" compressed="true" preprocess="xml-stripblanks">icons/breathe.svg</file>
+    <file alias="scalable/categories/glide-both-symbolic.svg" compressed="true" preprocess="xml-stripblanks">icons/glide-both.svg</file>
+    <file alias="scalable/categories/glide-down-symbolic.svg" compressed="true" preprocess="xml-stripblanks">icons/glide-down.svg</file>
+    <file alias="scalable/categories/glide-up-symbolic.svg" compressed="true" preprocess="xml-stripblanks">icons/glide-up.svg</file>
+  </gresource>
 </gresources>
