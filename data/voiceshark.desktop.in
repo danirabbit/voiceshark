@@ -9,3 +9,5 @@ Categories=Education;
 Icon=io.github.danirabbit.voiceshark
 Exec=io.github.danirabbit.voiceshark
 Terminal=false
+
+X-GNOME-UsesNotifications=true
